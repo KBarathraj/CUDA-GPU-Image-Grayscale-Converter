@@ -22,8 +22,9 @@ Each CUDA thread processes one pixel independently.
 ## How to Run
 
 1. Place input images inside the `images/` folder.
-2. Build and run the project in Visual Studio.
-3. Processed grayscale images will appear inside the `output/` folder.
+2. **Windows**: Run `build.bat` in your terminal or double-click it. This will automatically set up the MSVC compiler, link OpenCV, and build `processImages.exe`. Run the executable using `.\processImages.exe`.
+3. **Linux / Unix**: Run `./run.sh` or use `make` to compile and execute the program automatically using the provided Makefile.
+4. Processed grayscale images will automatically appear inside the `output/` folder with a `gray_` prefix.
 
 ## GPU Kernel
 
